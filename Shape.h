@@ -109,7 +109,6 @@ public:
 
     vector<PathCommand> parsePathData() const;
     
-    // NEW: triangulated vertices
     sf::VertexArray filledVertices;
     bool filledVerticesReady = false;
 
