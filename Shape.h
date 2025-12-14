@@ -88,41 +88,6 @@ public:
     void draw(RenderWindow& window) override;
 };
 
-
-// class path : public shape {
-// public:
-//     string d; // path data
-
-//     // Thuộc tính SVG
-//     multi_transform trans;
-//     bool has_fill = false;
-//     bool has_stroke = false;
-//     sf::Color fill_color = sf::Color::Transparent;
-//     sf::Color stroke_color = sf::Color::Transparent;
-//     float stroke_width = 1.0f;
-//     float fill_opacity = 1.0f;
-//     float stroke_opacity = 1.0f;
-
-//     struct PathCommand {
-//         char type;
-//         vector<float> values;
-//     };
-
-//     vector<PathCommand> parsePathData() const; // parse d thành commands
-//     void renderPath(sf::RenderWindow &window, const vector<PathCommand> &commands) const;
-
-//     sf::Color getFillColor() const {
-//         return sf::Color(fill_color.r, fill_color.g, fill_color.b,
-//                          static_cast<uint8_t>(fill_opacity * 255));
-//     }
-//     sf::Color getStrokeColor() const {
-//         return sf::Color(stroke_color.r, stroke_color.g, stroke_color.b,
-//                          static_cast<uint8_t>(stroke_opacity * 255));
-//     }
-
-//     void draw(sf::RenderWindow &window) override ;
-// };
-
 class path : public shape {
 public:
     string d; // path data
